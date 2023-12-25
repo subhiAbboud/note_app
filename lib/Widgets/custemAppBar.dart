@@ -11,7 +11,9 @@ class CustemAppBar extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
-          Text('Notes'),
+          Text('Notes',
+          style: Theme.of(context,).textTheme.bodyMedium,
+          ),
           RectangleIconButton(icon: Icons.search, onPress: () {}),
         ],
       ),

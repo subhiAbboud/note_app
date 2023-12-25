@@ -13,7 +13,7 @@ class NoteItem extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         borderRadius: BorderRadius.all(Radius.circular(20.0)),
-        //Todo : add random calor
+        //Todo : add random color
       ),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.end,
@@ -23,6 +23,8 @@ class NoteItem extends StatelessWidget {
             title: Text(note.title),
             subtitle: Text(note.subTitle),
           ),
+          
+          Text('${DateTime.now().month}/${DateTime.now().day}/${DateTime.now().year}',),
         ],
       ),
     );
