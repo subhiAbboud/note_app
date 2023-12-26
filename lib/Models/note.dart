@@ -1,10 +1,11 @@
-
 class Note {
-
   String title;
   String subTitle;
-
-  Note({required this.title ,required this.subTitle});
-
-
+  String date;
+  int color;
+  Note(
+      {required this.title,
+      required this.subTitle,
+      required this.date,
+      required this.color});
 }

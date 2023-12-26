@@ -14,8 +14,18 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Home(),
-      theme:  currTheme == theme.dark ? ThemeData.dark() : ThemeData.light(), 
+      theme:  ThemeData(brightness: Brightness.dark,
+        fontFamily: 'assets\fonts\Poppins-Regular.ttf'),
       );
   }
 }
 
+
+
+ // currTheme == theme.dark 
+      // ? 
+      // ThemeData(brightness: Brightness.dark,
+      //   fontFamily: 'assets\fonts\Poppins-Regular.ttf') 
+      // :
+      // ThemeData(brightness: Brightness.light,
+      //   fontFamily: 'assets\fonts\Poppins-Regular.ttf') 

@@ -17,14 +17,19 @@ class NoteItem extends StatelessWidget {
       ),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.end,
-
+        
         children: <Widget>[
           ListTile(
-            title: Text(note.title),
-            subtitle: Text(note.subTitle),
+            title: Text(note.title,style: const TextStyle(color: Colors.black),),
+            subtitle: Text(note.subTitle,style: TextStyle(color: Colors.black.withOpacity(0.05)),),
+
+            trailing: IconButton(icon: const Icon(Icons.delete,
+            color: Colors.black,),onPressed: (){},),
           ),
           
-          Text('${DateTime.now().month}/${DateTime.now().day}/${DateTime.now().year}',),
+          SizedBox(height: 20.0,),
+
+          Text('${DateTime.now().month}/${DateTime.now().day}/${DateTime.now().year}',style: TextStyle(color: Colors.black.withOpacity(0.05)),),
         ],
       ),
     );

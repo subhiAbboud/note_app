@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'custemAppBar.dart';
 import 'package:note_app/Models/dataLayer.dart';
-
+import 'noteListView.dart';
 class NotesViewBody extends StatelessWidget {
   List<Note> notes = [];
   List<Widget> notesWidgets = [];
@@ -12,6 +12,9 @@ class NotesViewBody extends StatelessWidget {
       child: Column(
         children: <Widget>[
           const CustemAppBar(),
+          NotesListView(),
+
+          
           ],
       ),
     );
