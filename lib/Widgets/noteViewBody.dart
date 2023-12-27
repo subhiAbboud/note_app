@@ -12,7 +12,7 @@ class NotesViewBody extends StatelessWidget {
       child: Column(
         children: <Widget>[
           const CustemAppBar(),
-          NotesListView(),
+          Expanded(child: NotesListView()),
 
           
           ],

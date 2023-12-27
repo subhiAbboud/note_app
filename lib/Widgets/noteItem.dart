@@ -1,7 +1,8 @@
-
-
 import 'package:flutter/material.dart';
 import 'package:note_app/Models/dataLayer.dart';
+
+
+
 class NoteItem extends StatelessWidget {
   Note note;
 
@@ -11,6 +12,7 @@ class NoteItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      color: note.color,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.all(Radius.circular(20.0)),
         //Todo : add random color
