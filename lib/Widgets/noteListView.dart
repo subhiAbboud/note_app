@@ -1,13 +1,15 @@
-import 'dart:math';
+
 import 'package:note_app/const.dart';
 import 'package:flutter/material.dart';
 import 'package:note_app/Widgets/noteItem.dart';
 import 'package:note_app/Models/dataLayer.dart';
-import 'noteItem.dart';
+
 
 
 
 class NotesListView extends StatelessWidget {
+  const NotesListView({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Padding(

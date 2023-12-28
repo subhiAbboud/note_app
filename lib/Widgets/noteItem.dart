@@ -4,7 +4,7 @@ import 'package:note_app/Models/dataLayer.dart';
 
 
 class NoteItem extends StatelessWidget {
-  Note note;
+  final Note note;
 
   NoteItem({required this.note});
 
