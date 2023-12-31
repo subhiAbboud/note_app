@@ -13,7 +13,7 @@ class NotesViewBody extends StatelessWidget {
     return SafeArea(
       child: Column(
         children: <Widget>[
-          const CustemAppBar(),
+          const CustemAppBar(label: 'Notes',icon: Icons.search,),
           Expanded(child: NotesListView()),
 
           

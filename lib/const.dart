@@ -1,4 +1,3 @@
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 // import 'Utilites/theme.dart';
@@ -22,6 +21,7 @@ class _ColorPicker {
   ];
 
   Color giveMeColor() {
+    index < 10 ? index : index = 0;
     return _kColorsList[index++];
   }
 }

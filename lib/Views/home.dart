@@ -15,7 +15,10 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: NotesViewBody(),
+      body: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 25.0,vertical: 10),
+        child: NotesViewBody(),
+      ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           showModalBottomSheet(
