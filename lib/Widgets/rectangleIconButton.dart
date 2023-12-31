@@ -10,15 +10,15 @@ class RectangleIconButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return RawMaterialButton(
-        shape: const RoundedRectangleBorder() ,
+        shape: const RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(15))) ,
         constraints: const BoxConstraints.tightFor(
-          width: 56.0,
-          height: 56.0,
+          width: 50.0,
+          height: 50.0,
         ),
         fillColor: const Color.fromARGB(30, 250, 248, 248),
 
         elevation: 5.0,
-        child: Icon(icon),
+        child: Icon(icon,size: 30,),
         onPressed: onPress());
   }
 }

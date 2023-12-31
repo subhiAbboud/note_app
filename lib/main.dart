@@ -3,6 +3,7 @@ import 'package:hive_flutter/hive_flutter.dart';
 import 'package:note_app/Views/home.dart';
 import 'const.dart';
 import 'package:hive/hive.dart';
+
 void main() async {
   await Hive.initFlutter();
   await Hive.openBox(kNotesBox);
@@ -16,6 +17,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Home(),
       theme: ThemeData(
         brightness: Brightness.dark,

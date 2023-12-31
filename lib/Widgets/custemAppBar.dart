@@ -2,21 +2,23 @@ import 'package:flutter/material.dart';
 import 'package:note_app/Widgets/rectangleIconButton.dart';
 
 class CustemAppBar extends StatelessWidget {
-  const CustemAppBar({super.key});
+  const CustemAppBar({required this.label, super.key, required this.icon});
 
+  final String label;
+  final IconData icon;
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(10.0),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: <Widget>[
-          Text('Notes',
-          style: Theme.of(context,).textTheme.bodyMedium,
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      children: <Widget>[
+         Text(
+          label,
+          style:  TextStyle(
+            fontSize: 30,
           ),
-          RectangleIconButton(icon: Icons.search, onPress: () {}),
-        ],
-      ),
+        ),
+        RectangleIconButton(icon: icon, onPress: () {}),
+      ],
     );
   }
 }
